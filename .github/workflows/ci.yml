@@ -262,7 +262,7 @@ jobs:
           driver-opts: network=host
       -
         name: Build and push to local registry
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v3
         with:
           context: ./test
           file: ./test/Dockerfile
